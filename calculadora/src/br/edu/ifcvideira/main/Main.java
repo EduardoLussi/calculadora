@@ -17,12 +17,17 @@ public class Main {
 					+ "4- Divisão\n"
 					+ "5- Sair"));
 			
-			if (op == 1) {
-				double num1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o primerio número\n"));
-				double num2 = Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo número\n"));
-				resultado = num1 + num2;
-			} else {
+			if (op == 5) {
 				break;
+			} 
+			
+			double num1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o primerio número\n"));
+			double num2 = Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo número\n"));
+			
+			if (op == 1) {
+				resultado = num1 + num2;
+			} else if (op == 2) {
+				resultado = num1 - num2;
 			}
 			
 			JOptionPane.showMessageDialog(null, "Resultado: \n" + resultado);
