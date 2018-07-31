@@ -28,6 +28,8 @@ public class Main {
 				resultado = num1 + num2;
 			} else if (op == 2) {
 				resultado = num1 - num2;
+			} else if (op == 3) {
+				resultado = num1 * num2;
 			}
 			
 			JOptionPane.showMessageDialog(null, "Resultado: \n" + resultado);
